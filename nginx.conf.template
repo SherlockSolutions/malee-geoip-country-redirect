@@ -41,10 +41,14 @@ $SSL_DIRECTIVES
 
     if (\$geoip_country_code = \"SA\") {
       return 404;
+      break;
     }
     if (\$geoip_country_code = \"UK\") {
       return 404;
+      break;
     }
+    proxy_pass  http://$APP;
+
   }
   include $DOKKU_ROOT/$APP/nginx.conf.d/*.conf;
 }
