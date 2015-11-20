@@ -40,14 +40,14 @@ $SSL_DIRECTIVES
     proxy_set_header X-Request-Start \$msec;
 
     if (\$geoip_country_code = \"SA\") {
-      return 301 https://sa.maleeonline.com\$request_uri;
+      return 301 https://sa.demo.maleeonline.com\$request_uri;
       break;
     }
     if (\$geoip_country_code = \"UK\") {
-      return 301 https://sa.maleeonline.com\$request_uri;
+      return 301 https://uk.demo.maleeonline.com\$request_uri;
       break;
     }
-    return 301 https://sa.maleeonline.com\$request_uri;
+    return 301 https://sa.demo.maleeonline.com\$request_uri;
     #proxy_pass  http://$APP;
 
   }
