@@ -47,7 +47,7 @@ $SSL_DIRECTIVES
       return 301 https://uk.maleeonline.com\$request_uri;
       break;
     }
-    return 301 https://sa.maleeonline.com\$request_uri;
+    return 301 https://uk.maleeonline.com\$request_uri;
     #proxy_pass  http://$APP;
 
   }
