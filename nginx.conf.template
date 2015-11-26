@@ -43,7 +43,7 @@ $SSL_DIRECTIVES
       return 301 https://sa.maleeonline.com\$request_uri;
       break;
     }
-    if (\$geoip_country_code = \"UK\") {
+    if (\$geoip_country_code = \"GB\") {
       return 301 https://uk.maleeonline.com\$request_uri;
       break;
     }
